@@ -17,8 +17,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(42)->create(['level' => 'guru']);
-
+        
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'admin@admin',
@@ -27,5 +26,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('admin123'),
             'remember_token' => Str::random(10),
         ]);
+        
+        User::factory(42)->create(['level' => 'guru']);
     }
 }

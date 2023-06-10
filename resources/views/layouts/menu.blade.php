@@ -47,10 +47,10 @@
     <span class="nav_name">Statistika</span> 
 </a>
 
-<a href="/kategori" class="nav_link {{ Request::is('kategori') ? 'active' : '' }}"> 
+<!-- <a href="/kategori" class="nav_link {{ Request::is('kategori') ? 'active' : '' }}"> 
     <i class='bx bxs-category-alt nav_icon ' size='lg'></i> 
     <span class="nav_name">Kategori</span> 
-</a>
+</a> -->
 
 <a href="/pelanggaran" class="nav_link {{ Request::is('pelanggaran') ? 'active' : '' }}"> 
     <i class='bx bx-receipt nav_icon}' size='lg'></i> 
